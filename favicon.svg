@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <style>
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #08080f; }
-      .moon { fill: #c8a850; }
+      .bg { fill: #0a0815; }
+      .bar { fill: #d946ef; }
     }
     @media (prefers-color-scheme: light) {
-      .bg { fill: #f5f5f0; }
-      .moon { fill: #a08030; }
+      .bg { fill: #f5f0ff; }
+      .bar { fill: #7e22ce; }
     }
   </style>
-  <!-- Background circle -->
-  <circle class="bg" cx="16" cy="16" r="16"/>
-  <!-- Crescent moon shape -->
-  <circle class="moon" cx="16" cy="16" r="9"/>
-  <circle class="bg" cx="19" cy="13" r="7"/>
+  <!-- Rounded square background -->
+  <rect class="bg" width="32" height="32" rx="7"/>
+  <!-- Audio equalizer bars, bottom-aligned at y=28 -->
+  <rect class="bar" x="3"  y="14" width="5" height="14" rx="2.5"/>
+  <rect class="bar" x="10" y="6"  width="5" height="22" rx="2.5"/>
+  <rect class="bar" x="17" y="10" width="5" height="18" rx="2.5"/>
+  <rect class="bar" x="24" y="18" width="5" height="10" rx="2.5"/>
 </svg>
