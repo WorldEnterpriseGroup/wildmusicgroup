@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Music Group — Talent Management &amp; Artist Development</title>
+  <meta name="description" content="Wild Music Group represents bold, boundary-pushing musicians across indie, alternative, experimental, and world music. Career strategy, booking, brand development, and more.">
+  <link rel="canonical" href="https://wildmusicgroup.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wild Music Group — Talent Management &amp; Artist Development">
+  <meta property="og:description" content="We represent bold, authentic, boundary-pushing musicians who embrace creative freedom and artistic individuality.">
+  <meta property="og:image" content="https://wildmusicgroup.com/assets/images/og-image.avif">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wildmusicgroup.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wild Music Group — Talent Management">
+  <meta name="twitter:description" content="Representing bold, boundary-pushing musicians worldwide.">
+  <meta name="twitter:image" content="https://wildmusicgroup.com/assets/images/og-image.avif">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "Wild Music Group Ltd",
+    "alternateName": "Wild Moon",
+    "url": "https://wildmusicgroup.com",
+    "logo": "https://wildmusicgroup.com/favicon.svg",
+    "image": "https://wildmusicgroup.com/assets/images/og-image.avif",
+    "description": "Wild Music Group is an innovative talent management and artist development agency dedicated to representing bold, authentic, and boundary-pushing musicians who embody creative freedom and artistic individuality.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Marietta", "addressRegion": "OH", "addressCountry": "US" },
+    "naics": "711410",
+    "serviceArea": { "@type": "Country", "name": "United States" }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="assets/images/hero.avif" type="image/avif" fetchpriority="high">
+
+  <!-- Speculation Rules -->
+  <script type="speculationrules">
+  { "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }] }
+  </script>
+
+  <!-- Tailwind CSS v4 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-base:    #08080f;
+      --color-surface: #0f0f1a;
+      --color-raised:  #16162a;
+      --color-gold:    #c8a850;
+      --color-ink:     #eeeef5;
+      --color-muted:   #8888a8;
+      --font-family-display: 'Cinzel', Georgia, serif;
+      --font-family-sans:    'Inter', system-ui, -apple-system, sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-base text-ink font-sans antialiased">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation — Tailwind UI app shell nav pattern -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-base/90 backdrop-blur-lg border-b border-white/10" role="navigation" aria-label="Main navigation">
+    <div class="relative mx-auto max-w-7xl px-6">
+      <!-- Brand + hamburger row -->
+      <div class="flex h-[72px] items-center justify-between">
+        <a href="/" class="font-display text-lg font-bold tracking-widest uppercase text-gold shrink-0" aria-label="Wild Music Group — Home">Wild Music Group</a>
+        <button class="nav-toggle flex md:hidden items-center justify-center w-10 h-10 rounded border border-white/20 text-ink hover:border-gold hover:text-gold transition-colors duration-200" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+          <i class="fa-solid fa-bars text-sm" aria-hidden="true"></i>
+        </button>
+      </div>
+      <!-- Nav links: absolute in the 72px row on desktop, stacks below on mobile when .is-open -->
+      <ul id="primary-nav" role="list" class="nav-links hidden md:absolute md:inset-y-0 md:right-6 md:flex md:items-center md:gap-8 list-none">
+        <li><a href="/" class="min-h-[52px] md:min-h-0 flex items-center text-[0.78rem] font-semibold tracking-widest uppercase text-gold border-b border-b-gold md:border-b-0 md:pb-0 pb-0" aria-current="page">Home</a></li>
+        <li><a href="artists.html" class="min-h-[52px] md:min-h-0 flex items-center text-[0.78rem] font-semibold tracking-widest uppercase text-ink/70 hover:text-gold transition-colors duration-200 border-b border-white/10 md:border-none">Artists</a></li>
+        <li><a href="services.html" class="min-h-[52px] md:min-h-0 flex items-center text-[0.78rem] font-semibold tracking-widest uppercase text-ink/70 hover:text-gold transition-colors duration-200 border-b border-white/10 md:border-none">Services</a></li>
+        <li><a href="about.html" class="min-h-[52px] md:min-h-0 flex items-center text-[0.78rem] font-semibold tracking-widest uppercase text-ink/70 hover:text-gold transition-colors duration-200 border-b border-white/10 md:border-none">About</a></li>
+        <li class="pt-3 pb-1 md:pt-0 md:pb-0">
+          <a href="contact.html" class="inline-flex items-center rounded bg-gold px-4 py-2 text-[0.78rem] font-bold tracking-widest uppercase text-base hover:bg-gold/90 transition-colors duration-200">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content" class="pt-[72px]">
+
+    <!-- Hero — Tailwind UI centered hero with background image -->
+    <section class="relative isolate min-h-[min(90vh,720px)] flex items-end overflow-hidden" aria-label="Hero banner">
+      <img
+        src="assets/images/hero.avif"
+        alt="Moonlit outdoor concert stage with wild musicians performing under a dramatic full moon"
+        class="absolute inset-0 -z-10 size-full object-cover"
+        width="1024" height="576"
+        fetchpriority="high"
+        decoding="async">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-base/20 via-base/55 to-base" aria-hidden="true"></div>
+
+      <div class="mx-auto max-w-7xl w-full px-6 py-20 lg:py-28">
+        <div class="max-w-2xl">
+          <p class="text-[0.68rem] font-semibold tracking-[0.3em] uppercase text-gold mb-5">Talent Management &amp; Artist Development</p>
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-[4.5rem] font-bold text-white leading-[1.05] mb-6" style="text-shadow:0 2px 40px rgba(0,0,0,0.5)">
+            Where Bold Artists Find Their Stage
+          </h1>
+          <p class="text-lg text-ink/75 leading-relaxed mb-10 max-w-xl">We represent visionary musicians who embrace a wild spirit — boundary-pushing creators across indie, alternative, experimental, and world music.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="artists.html" class="inline-flex items-center gap-2 rounded bg-gold px-7 py-3.5 text-[0.78rem] font-bold tracking-widest uppercase text-base hover:bg-gold/90 hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(200,168,80,0.35)] transition-all duration-200 min-h-[48px]">
+              Our Artists <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+            </a>
+            <a href="contact.html" class="inline-flex items-center gap-2 rounded border border-white/30 px-7 py-3.5 text-[0.78rem] font-semibold tracking-widest uppercase text-ink/85 hover:border-gold hover:text-gold transition-all duration-200 min-h-[48px]">
+              Work With Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats — Tailwind UI stats section -->
+    <div class="bg-raised border-y border-gold/20" aria-label="Company statistics">
+      <div class="mx-auto max-w-7xl px-6 py-16">
+        <dl class="grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-4 text-center">
+          <div>
+            <dd class="font-display text-5xl font-bold text-gold tabular-nums">40+</dd>
+            <dt class="mt-3 text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted">Artists Represented</dt>
+          </div>
+          <div>
+            <dd class="font-display text-5xl font-bold text-gold tabular-nums">300+</dd>
+            <dt class="mt-3 text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted">Festivals Booked</dt>
+          </div>
+          <div>
+            <dd class="font-display text-5xl font-bold text-gold tabular-nums">12</dd>
+            <dt class="mt-3 text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted">Genres Championed</dt>
+          </div>
+          <div>
+            <dd class="font-display text-5xl font-bold text-gold tabular-nums">15+</dd>
+            <dt class="mt-3 text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted">Years in Music</dt>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <!-- Featured Artists — Tailwind UI card grid -->
+    <section class="mx-auto max-w-7xl px-6 py-24 lazy-section" aria-labelledby="artists-heading">
+      <div class="max-w-2xl mb-14">
+        <p class="text-[0.68rem] font-semibold tracking-[0.3em] uppercase text-gold mb-3">Our Roster</p>
+        <h2 class="font-display text-4xl font-bold text-ink" id="artists-heading">Featured Artists</h2>
+        <p class="mt-4 text-base text-muted leading-relaxed">From indie underground to world stages, we nurture careers that defy convention.</p>
+      </div>
+
+      <ul role="list" class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <li class="animate-enter">
+          <article class="group flex flex-col overflow-hidden rounded-2xl bg-surface border border-white/[0.07] hover:border-gold/25 hover:-translate-y-1.5 hover:shadow-[0_0_56px_rgba(200,168,80,0.13)] transition-all duration-300">
+            <div class="aspect-[4/3] overflow-hidden">
+              <a href="artists.html#nova-rivers" aria-label="Nova Rivers — Indie Rock">
+                <img src="assets/images/artist-1.avif" alt="Nova Rivers performing on stage with electric guitar under neon lights" class="size-full object-cover group-hover:scale-105 transition-transform duration-500" width="1024" height="768" loading="lazy" decoding="async">
+              </a>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <p class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-gold mb-2">Indie Rock</p>
+              <h3 class="font-display text-xl font-bold text-ink mb-3">Nova Rivers</h3>
+              <p class="text-sm text-muted leading-relaxed">Raw energy meets lyrical depth. Nova's anthemic sound has filled festival grounds from Ohio to Glasgow with unforgettable urgency.</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="animate-enter">
+          <article class="group flex flex-col overflow-hidden rounded-2xl bg-surface border border-white/[0.07] hover:border-gold/25 hover:-translate-y-1.5 hover:shadow-[0_0_56px_rgba(200,168,80,0.13)] transition-all duration-300">
+            <div class="aspect-[4/3] overflow-hidden">
+              <a href="artists.html#luna-kira" aria-label="Luna Kira — World Fusion">
+                <img src="assets/images/artist-2.avif" alt="Luna Kira playing exotic instruments in ethereal moonlit atmosphere" class="size-full object-cover group-hover:scale-105 transition-transform duration-500" width="1024" height="768" loading="lazy" decoding="async">
+              </a>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <p class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-gold mb-2">World Fusion</p>
+              <h3 class="font-display text-xl font-bold text-ink mb-3">Luna Kira</h3>
+              <p class="text-sm text-muted leading-relaxed">A weaver of traditions across continents. Luna's music transcends borders, fusing ancient sounds with contemporary storytelling.</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="animate-enter">
+          <article class="group flex flex-col overflow-hidden rounded-2xl bg-surface border border-white/[0.07] hover:border-gold/25 hover:-translate-y-1.5 hover:shadow-[0_0_56px_rgba(200,168,80,0.13)] transition-all duration-300">
+            <div class="aspect-[4/3] overflow-hidden">
+              <a href="artists.html#phantom-circuit" aria-label="Phantom Circuit — Experimental Electronic">
+                <img src="assets/images/artist-3.avif" alt="Phantom Circuit surrounded by synthesizers in a futuristic dark studio" class="size-full object-cover group-hover:scale-105 transition-transform duration-500" width="1024" height="768" loading="lazy" decoding="async">
+              </a>
+            </div>
+            <div class="flex flex-col flex-1 p-6">
+              <p class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-gold mb-2">Experimental Electronic</p>
+              <h3 class="font-display text-xl font-bold text-ink mb-3">Phantom Circuit</h3>
+              <p class="text-sm text-muted leading-relaxed">Architecture of sound. Phantom Circuit dismantles genre boundaries, building immersive sonic landscapes that resonate long after the last note.</p>
+            </div>
+          </article>
+        </li>
+
+      </ul>
+
+      <div class="mt-12 text-center">
+        <a href="artists.html" class="inline-flex items-center gap-2 rounded border border-white/25 px-7 py-3 text-[0.78rem] font-semibold tracking-widest uppercase text-ink/80 hover:border-gold hover:text-gold transition-all duration-200">
+          View Full Roster <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services Overview — Tailwind UI feature grid on dark bg -->
+    <section class="bg-surface border-y border-white/[0.07] lazy-section" aria-labelledby="services-heading">
+      <div class="mx-auto max-w-7xl px-6 py-24">
+        <div class="max-w-2xl mb-14">
+          <p class="text-[0.68rem] font-semibold tracking-[0.3em] uppercase text-gold mb-3">What We Do</p>
+          <h2 class="font-display text-4xl font-bold text-ink" id="services-heading">Full-Spectrum Artist Management</h2>
+          <p class="mt-4 text-base text-muted leading-relaxed">Every artist we take on receives a bespoke strategy built from the ground up — no template careers.</p>
+        </div>
+
+        <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="animate-enter relative rounded-2xl bg-raised p-8 ring-1 ring-white/[0.07] hover:ring-gold/25 hover:-translate-y-1 hover:shadow-[0_0_44px_rgba(200,168,80,0.11)] transition-all duration-300">
+            <dt>
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20">
+                <i class="fa-solid fa-compass text-gold" aria-hidden="true"></i>
+              </div>
+              <p class="font-display text-base font-bold text-ink">Career Strategy</p>
+            </dt>
+            <dd class="mt-2 text-sm text-muted leading-relaxed">Long-range roadmaps aligned to your artistic vision — release schedules, touring plans, and milestones that build momentum.</dd>
+          </div>
+          <div class="animate-enter relative rounded-2xl bg-raised p-8 ring-1 ring-white/[0.07] hover:ring-gold/25 hover:-translate-y-1 hover:shadow-[0_0_44px_rgba(200,168,80,0.11)] transition-all duration-300">
+            <dt>
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20">
+                <i class="fa-solid fa-calendar-check text-gold" aria-hidden="true"></i>
+              </div>
+              <p class="font-display text-base font-bold text-ink">Booking &amp; Touring</p>
+            </dt>
+            <dd class="mt-2 text-sm text-muted leading-relaxed">From intimate venues to major festival slots, we coordinate every performance detail so you can focus on the music.</dd>
+          </div>
+          <div class="animate-enter relative rounded-2xl bg-raised p-8 ring-1 ring-white/[0.07] hover:ring-gold/25 hover:-translate-y-1 hover:shadow-[0_0_44px_rgba(200,168,80,0.11)] transition-all duration-300">
+            <dt>
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20">
+                <i class="fa-solid fa-palette text-gold" aria-hidden="true"></i>
+              </div>
+              <p class="font-display text-base font-bold text-ink">Brand Development</p>
+            </dt>
+            <dd class="mt-2 text-sm text-muted leading-relaxed">Identity, visual direction, and brand voice that capture your essence and resonate with your audience across every touchpoint.</dd>
+          </div>
+          <div class="animate-enter relative rounded-2xl bg-raised p-8 ring-1 ring-white/[0.07] hover:ring-gold/25 hover:-translate-y-1 hover:shadow-[0_0_44px_rgba(200,168,80,0.11)] transition-all duration-300">
+            <dt>
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20">
+                <i class="fa-solid fa-bullhorn text-gold" aria-hidden="true"></i>
+              </div>
+              <p class="font-display text-base font-bold text-ink">Strategic Marketing</p>
+            </dt>
+            <dd class="mt-2 text-sm text-muted leading-relaxed">Data-informed campaigns across digital, social, and editorial channels that grow your audience without diluting your art.</dd>
+          </div>
+          <div class="animate-enter relative rounded-2xl bg-raised p-8 ring-1 ring-white/[0.07] hover:ring-gold/25 hover:-translate-y-1 hover:shadow-[0_0_44px_rgba(200,168,80,0.11)] transition-all duration-300">
+            <dt>
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20">
+                <i class="fa-solid fa-newspaper text-gold" aria-hidden="true"></i>
+              </div>
+              <p class="font-display text-base font-bold text-ink">Press &amp; PR</p>
+            </dt>
+            <dd class="mt-2 text-sm text-muted leading-relaxed">Media relationships and placement strategy that puts your story in front of tastemakers, editors, and influencers who matter.</dd>
+          </div>
+          <div class="animate-enter relative rounded-2xl bg-raised p-8 ring-1 ring-white/[0.07] hover:ring-gold/25 hover:-translate-y-1 hover:shadow-[0_0_44px_rgba(200,168,80,0.11)] transition-all duration-300">
+            <dt>
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-gold/10 ring-1 ring-gold/20">
+                <i class="fa-solid fa-handshake text-gold" aria-hidden="true"></i>
+              </div>
+              <p class="font-display text-base font-bold text-ink">Label &amp; Deal Negotiation</p>
+            </dt>
+            <dd class="mt-2 text-sm text-muted leading-relaxed">Label deals, sync licensing, sponsorships — we negotiate on your behalf, protecting your rights and maximising your revenue.</dd>
+          </div>
+        </dl>
+
+        <div class="mt-12">
+          <a href="services.html" class="inline-flex items-center gap-2 rounded bg-gold px-7 py-3.5 text-[0.78rem] font-bold tracking-widest uppercase text-base hover:bg-gold/90 hover:-translate-y-0.5 transition-all duration-200 min-h-[48px]">
+            Explore Services <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Teaser — Tailwind UI split content -->
+    <section class="mx-auto max-w-7xl px-6 py-24 lazy-section" aria-labelledby="about-teaser-heading">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+        <div class="relative rounded-2xl overflow-hidden ring-1 ring-gold/20 animate-enter order-last lg:order-first">
+          <img src="assets/images/about.avif" alt="Wild Music Group management office with gold and platinum records on the walls" class="w-full aspect-video object-cover" width="1024" height="576" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <p class="text-[0.68rem] font-semibold tracking-[0.3em] uppercase text-gold mb-3">Our Story</p>
+          <h2 class="font-display text-4xl font-bold text-ink mb-5" id="about-teaser-heading">Born From a Love of the Wild &amp; Unconventional</h2>
+          <hr class="w-12 h-0.5 bg-gold border-none mb-8" aria-hidden="true">
+          <p class="text-base text-muted leading-relaxed mb-5">Wild Music Group was founded on the belief that the most powerful music comes from artists who refuse to be defined. We exist to champion those artists — to give them the infrastructure, relationships, and creative freedom to build lasting careers on their own terms.</p>
+          <p class="text-base text-muted leading-relaxed mb-8">Our roster spans indie and alternative to experimental and world music — united not by genre but by an uncompromising commitment to artistic truth.</p>
+          <a href="about.html" class="inline-flex items-center gap-2 rounded bg-gold px-7 py-3.5 text-[0.78rem] font-bold tracking-widest uppercase text-base hover:bg-gold/90 hover:-translate-y-0.5 transition-all duration-200 min-h-[48px]">
+            Learn About Us <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="bg-raised border-y border-gold/20 lazy-section">
+      <div class="mx-auto max-w-7xl px-6 py-24 text-center">
+        <p class="text-[0.68rem] font-semibold tracking-[0.3em] uppercase text-gold mb-4">Ready to Take the Stage?</p>
+        <h2 class="font-display text-4xl font-bold text-ink mb-4">Let's Build Your Career Together</h2>
+        <p class="text-base text-muted max-w-lg mx-auto mb-10 leading-relaxed">Whether you're an emerging talent or an established artist seeking new direction, we want to hear your music.</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 rounded bg-gold px-8 py-4 text-[0.78rem] font-bold tracking-widest uppercase text-base hover:bg-gold/90 hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(200,168,80,0.35)] transition-all duration-200 min-h-[48px]">
+          Get in Touch <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer — Tailwind UI multi-column footer -->
+  <footer class="bg-surface border-t border-white/10" role="contentinfo">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_1fr_1fr]">
+        <div>
+          <a href="/" class="font-display text-xl font-bold tracking-wider text-gold block mb-4">Wild Music Group</a>
+          <p class="text-sm text-muted leading-relaxed max-w-xs">Wild Music Group is a talent management and artist development agency representing bold, authentic, boundary-pushing musicians across all genres.</p>
+        </div>
+        <nav aria-label="Footer navigation — Pages">
+          <p class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-gold mb-5">Navigation</p>
+          <ul role="list" class="space-y-3">
+            <li><a href="/" class="text-sm text-muted hover:text-gold transition-colors duration-200">Home</a></li>
+            <li><a href="artists.html" class="text-sm text-muted hover:text-gold transition-colors duration-200">Artists</a></li>
+            <li><a href="services.html" class="text-sm text-muted hover:text-gold transition-colors duration-200">Services</a></li>
+            <li><a href="about.html" class="text-sm text-muted hover:text-gold transition-colors duration-200">About</a></li>
+            <li><a href="contact.html" class="text-sm text-muted hover:text-gold transition-colors duration-200">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer navigation — Services">
+          <p class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-gold mb-5">Services</p>
+          <ul role="list" class="space-y-3">
+            <li><a href="services.html#career-strategy" class="text-sm text-muted hover:text-gold transition-colors duration-200">Career Strategy</a></li>
+            <li><a href="services.html#booking" class="text-sm text-muted hover:text-gold transition-colors duration-200">Booking &amp; Touring</a></li>
+            <li><a href="services.html#brand" class="text-sm text-muted hover:text-gold transition-colors duration-200">Brand Development</a></li>
+            <li><a href="services.html#marketing" class="text-sm text-muted hover:text-gold transition-colors duration-200">Strategic Marketing</a></li>
+            <li><a href="services.html#press" class="text-sm text-muted hover:text-gold transition-colors duration-200">Press &amp; PR</a></li>
+            <li><a href="services.html#deals" class="text-sm text-muted hover:text-gold transition-colors duration-200">Deal Negotiation</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mt-12 pt-6 border-t border-white/[0.07] flex flex-wrap justify-between items-center gap-4">
+        <p class="text-xs text-muted">© 2026 Wild Music Group Ltd. All rights reserved.</p>
+        <p class="text-xs text-muted">Marietta, OH — <a href="mailto:info@wildmusicgroup.com" class="hover:text-gold transition-colors duration-200">info@wildmusicgroup.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>
